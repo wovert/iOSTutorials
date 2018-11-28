@@ -194,7 +194,6 @@
 
 ``` sh
 $ vi helloworld/HelloWorld.m
-  
 
 编译
 $ clang -fobjc-arc HelloWorld.m -o HelloWorld
@@ -207,7 +206,17 @@ $ ./HelloWorld
 $ clang --help
 ```
 
+## ObjC 编译过程
 
+前段工具 －> 优化器 －> 代码生成器
 
+## 学习资源
 
+－ [苹果官方文档](https://developer.apple.com/develop/)
+  - [Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
+  - [iOS](https://developer.apple.com/library/ios/)
+
+- 苹果开发者大会 WWDC 
+  - [2017](https://developer.apple.com/videos/wwdc2017/)
+  - [2018](https://developer.apple.com/videos/wwdc2018/)
 
