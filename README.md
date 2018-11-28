@@ -156,11 +156,57 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
 ++++++++++++++++++++ Core OS +++++++++++++++++++++++  ++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
-                    
-         
-       
-         
 ```
+
+## 如何掌握高级变成语言
+
+－ 底层思维：向下，如何把握机器底层从微观理解对象构造
+  － 语言构造
+  － 编译转换
+  － 内存模型
+  － 运行时机制
+－ 抽象思维：向上，如何将我们的周围世界抽象为程序代码
+  － 面相对象
+  － 组建封装
+  － 设计模式
+  － 架构模式
+
+## ”时空人“三位一体分析法
+
+- 对时间分析 —— 发生在什么时候？
+  - compile-time VS run-time
+- 空间分析 —— 变量放在哪里
+  - stack VS heap
+- 人物分析 —— 代码哪里来的？
+  - programmer VS compiler/runtime/framework
+
+## 两种开发方式
+
+- 1. Clang 或 GCC 命令行
+  - `clang -fobjc-arc HelloWorld.m`
+  - `-fobjc-arc` 支持ARC内存管理
+  － 适合调试、研究、微观探测
+- 2. Xcode 项目
+  - 构建正规工程项目
+  - 使用大型框架，追求设计质量与代码组织
+
+### HelloWorld
+
+``` sh
+$ vi helloworld/HelloWorld.m
+  
+
+编译
+$ clang -fobjc-arc HelloWorld.m -o HelloWorld
+$ gcc -fobjc-arc HelloWorld.m -o HelloWorld
+
+运行
+$ ./HelloWorld
+
+帮助
+$ clang --help
+```
+
 
 
 
