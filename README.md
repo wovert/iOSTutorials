@@ -210,6 +210,8 @@ $ clang --help
 
 前段工具 －> 优化器 －> 代码生成器
 
+![ObjC 编译流程](./images/objc-flow.png)
+
 ## 学习资源
 
 － [苹果官方文档](https://developer.apple.com/develop/)
