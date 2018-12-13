@@ -220,3 +220,52 @@ $ clang --help
   - [2017](https://developer.apple.com/videos/wwdc2017/)
   - [2018](https://developer.apple.com/videos/wwdc2018/)
 
+## 类与对象
+
+- 引用类型 reference type
+  - 类 class
+  - 指针 pointer
+  - 块 block
+- 值类型 value type
+  - 基础数值类型
+  - 结构 struct
+  - 枚举 enum
+- 类型装饰
+  - 协议 protocol
+  - 类别 category
+  - 扩展 extension
+
+### 类与结构（class VS struct）
+
+- 类型与实例
+  - 类与对象
+  - 结构与值
+- 类——引用类型
+  - 位于栈上的指针（引用）
+  - 位于堆上的实体对象
+- 结构——值类型
+  - 实例直接位于栈中
+- 空间分析
+  - 运行时内存图
+
+### 对象的空间分析
+
+![对象内存空间分析](./images/object-in-memory.png)
+![结构内存空间分析](./images/struct-in-memory.png)
+
+### stack VS heap
+
+- stack: 存储值类型
+  - 无ARC 负担，由系统自动管理，以执行函数为单位
+  - 空间大小编译时确定（参数＋局部变量）
+  - 函数执行时，系统立即自动回收 stack
+  - 函数之行结束，系统立即自动回首 stack
+  - 函数之间通过拷贝值传递
+  - 具有局部性，大小有限额，超出会 stack overflow
+- heap: 存储引用类型对象
+  - 分配有程序员手动请求（创建对象时）
+  - 释放由运行时ARC机制自动释放（确定时）
+  - 函数之间通过拷贝引用（指针）传递
+  - 具有全局性，总体无大小限制（受制于系统内存整体大小）
+
+[RPoint](./class/RPoint.h)
