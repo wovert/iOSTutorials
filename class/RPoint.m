@@ -4,7 +4,7 @@
 @implementation RPoint
 
 -(void) print {
-  NSLog(@"[%d, %d]", self.x, self,y);
+  NSLog(@"[%d, %d]", self.x, self.y);
 }
 
 @end
