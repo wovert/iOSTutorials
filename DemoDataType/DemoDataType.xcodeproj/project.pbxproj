@@ -14,6 +14,23 @@
 		B65D1B3121C5535000389997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B2F21C5535000389997 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B65D1B7321C5576100389997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B65D1B6F21C5576100389997 /* HelloOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B65D1B5F21C5574000389997;
+			remoteInfo = HelloOSX;
+		};
+		B65D1B7921C5577100389997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B65D1B7521C5577100389997 /* HelloOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B65D1B5F21C5574000389997;
+			remoteInfo = HelloOSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B65D1B2321C5535000389997 /* DemoDataType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoDataType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65D1B2621C5535000389997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +39,8 @@
 		B65D1B2D21C5535000389997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65D1B3021C5535000389997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B65D1B3221C5535000389997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65D1B6F21C5576100389997 /* HelloOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HelloOSX.xcodeproj; sourceTree = "<group>"; };
+		B65D1B7521C5577100389997 /* HelloOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloOSX.xcodeproj; path = ../HelloWorld/HelloOSX/HelloOSX.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +57,8 @@
 		B65D1B1A21C5535000389997 = {
 			isa = PBXGroup;
 			children = (
+				B65D1B7521C5577100389997 /* HelloOSX.xcodeproj */,
+				B65D1B6F21C5576100389997 /* HelloOSX.xcodeproj */,
 				B65D1B2521C5535000389997 /* DemoDataType */,
 				B65D1B2421C5535000389997 /* Products */,
 			);
@@ -62,6 +83,22 @@
 				B65D1B3221C5535000389997 /* Info.plist */,
 			);
 			path = DemoDataType;
+			sourceTree = "<group>";
+		};
+		B65D1B7021C5576100389997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65D1B7421C5576100389997 /* HelloOSX */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B65D1B7621C5577100389997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B65D1B7A21C5577100389997 /* HelloOSX */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +147,39 @@
 			mainGroup = B65D1B1A21C5535000389997;
 			productRefGroup = B65D1B2421C5535000389997 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B65D1B7621C5577100389997 /* Products */;
+					ProjectRef = B65D1B7521C5577100389997 /* HelloOSX.xcodeproj */;
+				},
+				{
+					ProductGroup = B65D1B7021C5576100389997 /* Products */;
+					ProjectRef = B65D1B6F21C5576100389997 /* HelloOSX.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B65D1B2221C5535000389997 /* DemoDataType */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B65D1B7421C5576100389997 /* HelloOSX */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = HelloOSX;
+			remoteRef = B65D1B7321C5576100389997 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B65D1B7A21C5577100389997 /* HelloOSX */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = HelloOSX;
+			remoteRef = B65D1B7921C5577100389997 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B65D1B2121C5535000389997 /* Resources */ = {
@@ -286,6 +350,7 @@
 				B65D1B3721C5535000389997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

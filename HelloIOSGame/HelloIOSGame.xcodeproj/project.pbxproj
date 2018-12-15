@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B65D1B4521C554A800389997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D1B4421C554A800389997 /* AppDelegate.swift */; };
-		B65D1B4721C554A800389997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D1B4621C554A800389997 /* ViewController.swift */; };
-		B65D1B4A21C554A800389997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B4821C554A800389997 /* Main.storyboard */; };
-		B65D1B4C21C554A800389997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B4B21C554A800389997 /* Assets.xcassets */; };
-		B65D1B4F21C554A800389997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65D1B4D21C554A800389997 /* LaunchScreen.storyboard */; };
+		B65D1BFB21C55D2200389997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D1BFA21C55D2200389997 /* AppDelegate.swift */; };
+		B65D1BFD21C55D2200389997 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B65D1BFC21C55D2200389997 /* art.scnassets */; };
+		B65D1BFF21C55D2200389997 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D1BFE21C55D2200389997 /* GameViewController.swift */; };
+		B65D1C0221C55D2200389997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65D1C0021C55D2200389997 /* Main.storyboard */; };
+		B65D1C0421C55D2200389997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65D1C0321C55D2200389997 /* Assets.xcassets */; };
+		B65D1C0721C55D2200389997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65D1C0521C55D2200389997 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B65D1B4121C554A800389997 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B65D1B4421C554A800389997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B65D1B4621C554A800389997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B65D1B4921C554A800389997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B65D1B4B21C554A800389997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B65D1B4E21C554A800389997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B65D1B5021C554A800389997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B65D1BF721C55D2200389997 /* HelloiOSGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloiOSGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65D1BFA21C55D2200389997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B65D1BFC21C55D2200389997 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		B65D1BFE21C55D2200389997 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B65D1C0121C55D2200389997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B65D1C0321C55D2200389997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B65D1C0621C55D2200389997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B65D1C0821C55D2200389997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B65D1B3E21C554A800389997 /* Frameworks */ = {
+		B65D1BF421C55D2200389997 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B65D1B3821C554A800389997 = {
+		B65D1BEE21C55D2200389997 = {
 			isa = PBXGroup;
 			children = (
-				B65D1B4321C554A800389997 /* HelloWorld */,
-				B65D1B4221C554A800389997 /* Products */,
+				B65D1BF921C55D2200389997 /* HelloiOSGame */,
+				B65D1BF821C55D2200389997 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B65D1B4221C554A800389997 /* Products */ = {
+		B65D1BF821C55D2200389997 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B65D1B4121C554A800389997 /* HelloWorld.app */,
+				B65D1BF721C55D2200389997 /* HelloiOSGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B65D1B4321C554A800389997 /* HelloWorld */ = {
+		B65D1BF921C55D2200389997 /* HelloiOSGame */ = {
 			isa = PBXGroup;
 			children = (
-				B65D1B4421C554A800389997 /* AppDelegate.swift */,
-				B65D1B4621C554A800389997 /* ViewController.swift */,
-				B65D1B4821C554A800389997 /* Main.storyboard */,
-				B65D1B4B21C554A800389997 /* Assets.xcassets */,
-				B65D1B4D21C554A800389997 /* LaunchScreen.storyboard */,
-				B65D1B5021C554A800389997 /* Info.plist */,
+				B65D1BFA21C55D2200389997 /* AppDelegate.swift */,
+				B65D1BFC21C55D2200389997 /* art.scnassets */,
+				B65D1BFE21C55D2200389997 /* GameViewController.swift */,
+				B65D1C0021C55D2200389997 /* Main.storyboard */,
+				B65D1C0321C55D2200389997 /* Assets.xcassets */,
+				B65D1C0521C55D2200389997 /* LaunchScreen.storyboard */,
+				B65D1C0821C55D2200389997 /* Info.plist */,
 			);
-			path = HelloWorld;
+			path = HelloiOSGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B65D1B4021C554A800389997 /* HelloWorld */ = {
+		B65D1BF621C55D2200389997 /* HelloiOSGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B65D1B5321C554A800389997 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
+			buildConfigurationList = B65D1C0B21C55D2200389997 /* Build configuration list for PBXNativeTarget "HelloiOSGame" */;
 			buildPhases = (
-				B65D1B3D21C554A800389997 /* Sources */,
-				B65D1B3E21C554A800389997 /* Frameworks */,
-				B65D1B3F21C554A800389997 /* Resources */,
+				B65D1BF321C55D2200389997 /* Sources */,
+				B65D1BF421C55D2200389997 /* Frameworks */,
+				B65D1BF521C55D2200389997 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HelloWorld;
-			productName = HelloWorld;
-			productReference = B65D1B4121C554A800389997 /* HelloWorld.app */;
+			name = HelloiOSGame;
+			productName = HelloiOSGame;
+			productReference = B65D1BF721C55D2200389997 /* HelloiOSGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B65D1B3921C554A800389997 /* Project object */ = {
+		B65D1BEF21C55D2200389997 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = dev;
 				TargetAttributes = {
-					B65D1B4021C554A800389997 = {
+					B65D1BF621C55D2200389997 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = B65D1B3C21C554A800389997 /* Build configuration list for PBXProject "HelloWorld" */;
+			buildConfigurationList = B65D1BF221C55D2200389997 /* Build configuration list for PBXProject "HelloiOSGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,54 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = B65D1B3821C554A800389997;
-			productRefGroup = B65D1B4221C554A800389997 /* Products */;
+			mainGroup = B65D1BEE21C55D2200389997;
+			productRefGroup = B65D1BF821C55D2200389997 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B65D1B4021C554A800389997 /* HelloWorld */,
+				B65D1BF621C55D2200389997 /* HelloiOSGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B65D1B3F21C554A800389997 /* Resources */ = {
+		B65D1BF521C55D2200389997 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65D1B4F21C554A800389997 /* LaunchScreen.storyboard in Resources */,
-				B65D1B4C21C554A800389997 /* Assets.xcassets in Resources */,
-				B65D1B4A21C554A800389997 /* Main.storyboard in Resources */,
+				B65D1BFD21C55D2200389997 /* art.scnassets in Resources */,
+				B65D1C0721C55D2200389997 /* LaunchScreen.storyboard in Resources */,
+				B65D1C0421C55D2200389997 /* Assets.xcassets in Resources */,
+				B65D1C0221C55D2200389997 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B65D1B3D21C554A800389997 /* Sources */ = {
+		B65D1BF321C55D2200389997 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65D1B4721C554A800389997 /* ViewController.swift in Sources */,
-				B65D1B4521C554A800389997 /* AppDelegate.swift in Sources */,
+				B65D1BFF21C55D2200389997 /* GameViewController.swift in Sources */,
+				B65D1BFB21C55D2200389997 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B65D1B4821C554A800389997 /* Main.storyboard */ = {
+		B65D1C0021C55D2200389997 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B65D1B4921C554A800389997 /* Base */,
+				B65D1C0121C55D2200389997 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B65D1B4D21C554A800389997 /* LaunchScreen.storyboard */ = {
+		B65D1C0521C55D2200389997 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B65D1B4E21C554A800389997 /* Base */,
+				B65D1C0621C55D2200389997 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B65D1B5121C554A800389997 /* Debug */ = {
+		B65D1C0921C55D2200389997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -182,7 +186,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -207,7 +211,7 @@
 			};
 			name = Debug;
 		};
-		B65D1B5221C554A800389997 /* Release */ = {
+		B65D1C0A21C55D2200389997 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,24 +249,24 @@
 			};
 			name = Release;
 		};
-		B65D1B5421C554A800389997 /* Debug */ = {
+		B65D1C0C21C55D2200389997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HelloWorld/Info.plist;
+				INFOPLIST_FILE = HelloiOSGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wovert.HelloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wovert.HelloiOSGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		B65D1B5521C554A800389997 /* Release */ = {
+		B65D1C0D21C55D2200389997 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HelloWorld/Info.plist;
+				INFOPLIST_FILE = HelloiOSGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wovert.HelloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wovert.HelloiOSGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -270,24 +274,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B65D1B3C21C554A800389997 /* Build configuration list for PBXProject "HelloWorld" */ = {
+		B65D1BF221C55D2200389997 /* Build configuration list for PBXProject "HelloiOSGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B65D1B5121C554A800389997 /* Debug */,
-				B65D1B5221C554A800389997 /* Release */,
+				B65D1C0921C55D2200389997 /* Debug */,
+				B65D1C0A21C55D2200389997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B65D1B5321C554A800389997 /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
+		B65D1C0B21C55D2200389997 /* Build configuration list for PBXNativeTarget "HelloiOSGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B65D1B5421C554A800389997 /* Debug */,
-				B65D1B5521C554A800389997 /* Release */,
+				B65D1C0C21C55D2200389997 /* Debug */,
+				B65D1C0D21C55D2200389997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B65D1B3921C554A800389997 /* Project object */;
+	rootObject = B65D1BEF21C55D2200389997 /* Project object */;
 }

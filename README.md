@@ -122,12 +122,46 @@
 
 ### 工作空间
 
-> 多个工程项目放在一起方便管理，工作空间可以把所有的工程项目放在工作空间进行管理
+> 多个工程项目放在一起方便管理，工作空间可以把所有的工程项目放在工作空间进行管理｀
 
 ## 快捷键
 
 - 代码提示：ESC
-- 移动行：alt+&+[ or ]
+- 移动行：alt + command + {[|]}
+- 配置编辑器: command + ,
+
+### 创建 OS X命令行程序项目
+
+- 在工作空间创建 New Project -> OS X -> Command Line Too
+
+### 创建 OS X窗体程序项目
+
+- 在工作空间创建 New Project -> OS X -> Cocoa Application
+
+### 创建 OS X 游戏程序项目
+
+- 在工作空间创建 New Project -> OS X -> Game
+- Game Technology
+  - SpriteKit: 2D游戏
+  - SceneKit: 3D游戏
+
+### 创建 iOS 游戏程序项目
+
+- 在工作空间创建 New Project -> iOS -> Game
+- Game Technology
+  - SpriteKit: 2D游戏
+  - SceneKit: 3D游戏
+  - OpenGL ES
+    - OpenGL: 开源绘图标准
+  - Metal: 苹果绘图标准
+
+## Playground
+
+> 编写程序同时显示变量的变化或调试程序时使用 playground
+
+## iOS Xcode 帮助文档的使用
+
+- 选中原生名字 -> help菜单 -> Quick Help for Selected Item
 
 ## 解决问题的途径
 
@@ -145,6 +179,24 @@
 - 问题清晰
 - 定位问题原因
 - 特定问题需要描述场景、操作、错误结果
+
+## 程序打包发布到 AppStore
+
+- 模拟器中运行程序
+  - hardware 菜单控制模拟器（方向、旋转等操作）
+  - 回到主页面：command + shift + h
+- 真机中运行程序
+  - 1. 必须有开发者证书：https://developer.apple.com/devcenter/
+  - 2. 工程项目配置中与真机OS版本一直
+    - Deployment Info -> Deployment Target
+    - 运行程序
+    - 添加 AppleID
+    - Window菜单 -> Orgnizer选项 -> device选项卡 -> Screenshot
+
+- 发布程序
+  - 1. 选中项目 -> produc菜单 －> Archive 归档
+  - 2. 选中项目 -> 按下 Distribute -> App Store -> Next
+  - 3. 苹果公司进行审核
 
 ## Objective-C 语言简介
 

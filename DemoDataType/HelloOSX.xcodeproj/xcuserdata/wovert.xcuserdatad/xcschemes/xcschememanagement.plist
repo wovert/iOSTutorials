@@ -3,16 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict>
-		<key>HelloWorld.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
+	<dict/>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B65D1AE621C5490400389997</key>
+		<key>B65D1B5E21C5574000389997</key>
 		<dict>
 			<key>primary</key>
 			<true/>
