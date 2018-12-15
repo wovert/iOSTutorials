@@ -109,19 +109,20 @@
 
 ![设置项目选项](./images/create-pro.png)
 ![应用程序配置信息](./images/info-plist.png)
-- Key: Main Storyboard file base name: `Main` 对应 Main。storyboard
-- 打开 Main.storyboard: 应用程序启动之后之行`view Controller`文件
+- Key: Main Storyboard file base name: `Main` 对应 `Main。storyboard`
+- 打开 `Main.storyboard主界面`: 应用程序启动之后之行`view Controller`文件
 - View Controller Scene
   - View Controller
 - 选中 view Controller 图标 ![view controller按钮](./images/vc-icon.png) 右上角显示`show the idendity inspect`按钮，此文件关联的类是 `ViewController.swift` 文件 ![关联ViewCotnroller文件](./images/vc-2-swift.png)
 - 应用程序启动之后 ViewController 加载之后之行 `viewDidLoad` 方法
 - 在 `viewDidLoad`方法中的最后一行输入`print("Hello World\n")`
 - 按下 `Ctrl+r` 运行程序
+- ![缩小设备窗口](./images/device-scalar.png)
 
 
-1. 工作空间
+### 工作空间
 
-- File -> New -> Workspace (Ctrl+&+n)
+> 多个工程项目放在一起方便管理，工作空间可以把所有的工程项目放在工作空间进行管理
 
 ## 快捷键
 
