@@ -3,18 +3,18 @@
 ## Apple Product
 
 - 1976 年创立
-- 1976年推出 Apple I
+- 1976年推出 Apple I(拍卖300万美元)
 - 1977年推出 Apple II
 - 1980年推出 Apple III
   － 1983年推出 Apple Lisa
-  － 1984年推出 Macintosh
-  － 1991年推出 PowerBook， 2006年被MacBook所取代
-  － 1993年推出 Apple Newton  掌上电脑
+  － 1984年推出 Macintosh（Windows 参考Macintosh）
+  － 1991年推出 PowerBook，2006年被MacBook系列所取代
+  － 1993年推出 Apple Newton 掌上电脑
 
 ## Apple 电脑产品
 
-－ 1998年推出 iMac
-－ 2005年推出 Mac mini（主机）
+－ 1998年推出 iMac（一体机）
+－ 2005年推出 Mac mini（主机箱）
 － 2006年推出 Mac Pro（服务器）
 － 2006年推出 MacBook
 － 2006年推出 MacBook Pro
@@ -53,44 +53,73 @@
 - 2008 OS X 10.6
 - 2010 OS X 10.7 appstore
 - 2012 OS X 10.8
-- 2013 OS X 10.9 省电（后台进程），内存压缩
+- 2013 **OS X 10.9** 省电（后台进程），内存压缩
 - 2014 OS X 10.10
 
-### OS X 系统架构
+###  OS X系统架构
 
-- C、C++、Object－C、Swift 
-  - OS X GUI
-    - Unix
+- C/C++, Object-C, Swift => OS x => Unix
 
 ## iOS history
 
 - 2007 iPhone Runs OS x
 - 2008 iPhone OS
-- 2010 iOS, iOS4(multiprocess)
+- 2010 iOS, **iOS4**(multi process)
+  - 后台运行进程一段时间，省电模式。不使用OS负责回收
+  - 待机比Android更长时间
 - 2011 iOS5
 - 2012 iOS6
 - 2013 iOS7(扁平化)
 - 2014 iOS8
+ - 不同应用程序通过OS数据交换
 
-### iOs 系统架构
+### iOS 系统架构
 
-- C、C++、Object-C、Swift 
-  - iOS GUI
-    - Unix
+- C/C++, Object-C, Swift => iOS => Unix
+- lua语言开发并在IOS设备运行
 
 ## iOS 软硬件环境要求
 
 - 硬件环境要求
   - CPU 双核
-  - 内存 8G
+  - 内存 8G（集成开发环境消耗很多内存）
   - MacBook Pro
   - 测试手机iPhone 5+
 
 - 软件环境要求
-  - OS X 10.9.3 ＋
+  - OS X 10.9.3＋
   - Xcode 6.0+
 
-## 工作空间
+## 创建项目
+
+### Sinble View Application
+
+![创建Single View Application](./images/SingleViewApp.png)
+
+1. Create a new Xcode project (iPhone/iPad/Mac)
+1. iOS
+2. Application
+3. Single View Application
+4. Options
+  + Project Name : 项目名
+  + Organization Name: 组织名 (dev)
+  + Organization Identifier: 组织ID（com.wovert）
+  + Language: Swift/Object-C
+  + Device : iPad/iPhone/Universal(包括iPad和iPhone)
+
+![设置项目选项](./images/create-pro.png)
+![应用程序配置信息](./images/info-plist.png)
+- Key: Main Storyboard file base name: `Main` 对应 Main。storyboard
+- 打开 Main.storyboard: 应用程序启动之后之行`view Controller`文件
+- View Controller Scene
+  - View Controller
+- 选中 view Controller 图标 ![view controller按钮](./images/vc-icon.png) 右上角显示`show the idendity inspect`按钮，此文件关联的类是 `ViewController.swift` 文件 ![关联ViewCotnroller文件](./images/vc-2-swift.png)
+- 应用程序启动之后 ViewController 加载之后之行 `viewDidLoad` 方法
+- 在 `viewDidLoad`方法中的最后一行输入`print("Hello World\n")`
+- 按下 `Ctrl+r` 运行程序
+
+
+1. 工作空间
 
 - File -> New -> Workspace (Ctrl+&+n)
 
@@ -102,12 +131,12 @@
 ## 解决问题的途径
 
 - 搜索引擎
-  - bing.com
-  - so.com
+  - [bing](http://bing.com)
+  - [so](http://so.com)
 - 技术交流论坛
 - 技术问答平台
-  - stackoverflow.com
-- github.com
+  - [stackoverflow](http://stackoverflow.com)
+- [github](http://github.com)
 
 ## 如何提问
 
@@ -160,16 +189,16 @@
 
 ## 如何掌握高级变成语言
 
-－ 底层思维：向下，如何把握机器底层从微观理解对象构造
-  － 语言构造
-  － 编译转换
-  － 内存模型
-  － 运行时机制
-－ 抽象思维：向上，如何将我们的周围世界抽象为程序代码
-  － 面相对象
-  － 组建封装
-  － 设计模式
-  － 架构模式
+- 底层思维：向下，如何把握机器底层从微观理解对象构造
+  - 语言构造
+  - 编译转换
+  - 内存模型
+  - 运行时机制
+- 抽象思维：向上，如何将我们的周围世界抽象为程序代码
+  - 面相对象
+  - 组建封装
+  - 设计模式
+  - 架构模式
 
 ## ”时空人“三位一体分析法
 
@@ -183,7 +212,7 @@
 ## 两种开发方式
 
 - 1. Clang 或 GCC 命令行
-  - `clang -fobjc-arc HelloWorld.m`
+  - `# clang -fobjc-arc HelloWorld.m`
   - `-fobjc-arc` 支持ARC内存管理
   － 适合调试、研究、微观探测
 - 2. Xcode 项目
@@ -271,3 +300,26 @@ $ clang --help
   - 具有全局性，总体无大小限制（受制于系统内存整体大小）
 
 [RPoint](./class/RPoint.h)
+
+### 类型成员——Type Member
+
+- 数据成员 data member 描述对象状态
+  - 实例变量 instance variable(对内)
+  - 属性 property（对外）
+- 函数成员 function member 描述对象行为
+  - 方法 method
+  - 初始化器 init
+  - 析构器 dealloc 
+
+
+#### 认识属性
+
+- 属性表达实例状态，描述类型对外接口。相比直接访问实例变量，属性可以做更多控制
+
+- 默认情况下，编译器会为属性定义 propertyName 自动合成；
+  - 一个 getter 访问器方法：propertyName
+  - 一个 setter 访问器方法：setPropertyName
+  - 一个实例变量 _propertyName
+
+- 可自定义访问器的方法，也可更改访问器方法名、或实例变量名
+- 可以使用静态全局变量（C语言）＋类方法，模拟类型属性
