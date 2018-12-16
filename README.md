@@ -253,6 +253,10 @@ func getNums()->(Int, Int) {
 
 ### OOP
 
+- 类的动态扩展：不改变类的结构下，扩展类的功能的方式
+
+
+
 ## iOS WebView
 
 **resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist**
@@ -266,8 +270,15 @@ func getNums()->(Int, Int) {
 5. Exception Domains
 6. wovert.com 可访问地址
 
+## Swfit 调用 OS
 
+## 调试
 
+- 输出信息定位错误
+- 断点调试
+  - Step Over: 一步一步
+  - Step Into: 进方法
+  - Step Out: 出方法
 
 
 ## Objective-C 语言简介
@@ -402,20 +413,20 @@ $ clang --help
 - 结构——值类型
   - 实例直接位于栈中
 - 空间分析
-  - 运行时内存图
+  - 变量在那里？ **运行时内存图**
 
 ### 对象的空间分析
 
 ![对象内存空间分析](./images/object-in-memory.png)
 ![结构内存空间分析](./images/struct-in-memory.png)
 
-### stack VS heap
+### Stack VS Heap
 
-- stack: 存储值类型
-  - 无ARC 负担，由系统自动管理，以执行函数为单位
+- stack: 存储**值类型**
+  - 无ARC(自动引用计数) 负担，由系统自动管理，以执行函数为单位
   - 空间大小编译时确定（参数＋局部变量）
   - 函数执行时，系统立即自动回收 stack
-  - 函数之行结束，系统立即自动回首 stack
+  - 函数之行结束，系统立即自动回收 stack
   - 函数之间通过拷贝值传递
   - 具有局部性，大小有限额，超出会 stack overflow
 - heap: 存储引用类型对象
@@ -424,18 +435,15 @@ $ clang --help
   - 函数之间通过拷贝引用（指针）传递
   - 具有全局性，总体无大小限制（受制于系统内存整体大小）
 
-[RPoint](./class/RPoint.h)
-
 ### 类型成员——Type Member
 
-- 数据成员 data member 描述对象状态
-  - 实例变量 instance variable(对内)
-  - 属性 property（对外）
+- 数据成员 data member 描述**对象状态**
+  - 实例变量 instance variable(对内,内部状态)
+  - 属性 property（对外，外部状态）
 - 函数成员 function member 描述对象行为
   - 方法 method
-  - 初始化器 init
-  - 析构器 dealloc 
-
+  - 初始化器 init（特殊方法）
+  - 析构器 dealloc （特殊方法）
 
 #### 认识属性
 
@@ -448,3 +456,13 @@ $ clang --help
 
 - 可自定义访问器的方法，也可更改访问器方法名、或实例变量名
 - 可以使用静态全局变量（C语言）＋类方法，模拟类型属性
+
+#### 实例变量
+
+- 可以定义实例变量，而不定一属性。只有实例变量，没有类变量（可以结合C语言模拟）。
+- 如果同时自定义了getter和setter访问器的方法，或者针对只读属性定义了 getter访问器方法，编译器将不再合成实例变量。
+
+- 再类外一律使用属性来访问，类内大多也通过 self 使用属性访问。只有一下情况使用实例变量来访问
+  - 初始化器 init
+  - 析构器 dealloc
+  - 自定义访问器方法
