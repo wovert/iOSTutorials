@@ -198,6 +198,78 @@
   - 2. 选中项目 -> 按下 Distribute -> App Store -> Next
   - 3. 苹果公司进行审核
 
+## Swift
+
+### 变量
+
+```
+var a = 1
+var b = 2
+```
+
+### 常量
+
+```
+let c:Int = 20
+```
+
+### 数据类型
+
+#### String类型
+
+- 字符串链接
+
+
+```
+var i = 200
+var str = "hello "
+str = str + " wovert.com"
+//str = str + 10
+str = "\(str), world, 100, \(i)"
+```
+
+#### 数组
+
+```
+var nums = []
+var names = String("a","b")
+var arr = ["hello", "wovert.com", 100, 200]
+```
+
+#### 字典
+
+```
+var dict = ["name":"wovert", "age": 2]
+dict["gender"] = "30"
+```
+
+### 函数
+
+```
+func getNums()->(Int, Int) {
+  return (2,3)
+}
+```
+
+### OOP
+
+## iOS WebView
+
+**resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist**
+
+![webview setting](./images/webview-set.png)
+
+1. 选择项目
+2. info
+3. App Transport Security Settings
+4. Allow Arbitrary Loads
+5. Exception Domains
+6. wovert.com 可访问地址
+
+
+
+
+
 ## Objective-C 语言简介
 
 > 简称 ObjC 或 OC，在 C语言基础上做了面向对象扩展
