@@ -9,7 +9,10 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    @IBOutlet weak var iv: UIImageView!
 
+    @IBOutlet var ivv: UIImageView!
+    @IBOutlet weak var iv: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

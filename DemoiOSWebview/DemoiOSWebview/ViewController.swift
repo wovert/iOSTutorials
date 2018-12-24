@@ -12,6 +12,7 @@ import WebKit //引入该包
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var iv: UIImageView!
     @IBOutlet var wv:UIWebView!
     
     //浏览器控件
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        @IBOutlet weak var iv: UIImageView!
+        @IBOutlet weak var iv: UIImageView!
     
         // webview 载入 http地址
         wv.loadRequest(NSURLRequest(URL: NSURL(string: "http://i.gqsj.cc")!))

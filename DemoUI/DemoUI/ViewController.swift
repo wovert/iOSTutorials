@@ -1,24 +1,23 @@
 //
 //  ViewController.swift
-//  DemoSwiftAndOC
+//  DemoUI
 //
-//  Created by wovert on 18/12/16.
+//  Created by wovert on 18/12/20.
 //  Copyright © 2018年 dev. All rights reserved.
 //
 
 import UIKit
 
-class ViewController:
+class ViewController:UIViewController {
+    
+      override func viewDidLoad() {
 
-UIViewController {
-
-    override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-        let h = Hello()
-        h.sayHello()
-
+        print("View Did Load")
+        //iv.image = UIImage(named: "football.png")
+        
     }
 
     override func didReceiveMemoryWarning() {

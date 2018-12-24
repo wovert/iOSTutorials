@@ -466,3 +466,18 @@ $ clang --help
   - 初始化器 init
   - 析构器 dealloc
   - 自定义访问器方法
+
+
+## Warning
+
+App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+
+解决方案：
+
+注 : App Transport Security (ATS) 是 IOS9 中引入的新特性
+
+以上用一句话概括就是: 新特性要求 App 内访问的网络必须使用HTTPS协议
+
+- 解决方案
+  - 1. 在 Info.plist 中添加NSAppTransportSecurity类型Dictionary。
+  - 2. 在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean, 值设为YES
