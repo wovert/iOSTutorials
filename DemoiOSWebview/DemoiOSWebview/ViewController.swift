@@ -9,6 +9,7 @@
 import UIKit
 
 import WebKit //引入该包
+@IBOutlet weak var tableView: UITableView!
 
 class ViewController: UIViewController {
     

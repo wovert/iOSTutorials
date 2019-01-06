@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A94F7AAB6BB725A97555519C43DAB0A800EC201E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A94F7AAB6BB725A97555519C43DAB0A800EC201E" : 0,
+    "2D108272B861779F8F95AEBB949ADE7908F97CEC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2ED03898-D69B-4751-B73F-D556C5436D60",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A94F7AAB6BB725A97555519C43DAB0A800EC201E" : "iOSTutorials\/",
+    "2D108272B861779F8F95AEBB949ADE7908F97CEC" : "iOSTutorials\/CTutorials\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyWorkSpace",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyWorkSpace.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wovert\/CTutorials.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2D108272B861779F8F95AEBB949ADE7908F97CEC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:wovert\/iOSTutorials.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A94F7AAB6BB725A97555519C43DAB0A800EC201E"
+    }
+  ]
+}

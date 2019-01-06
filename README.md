@@ -306,21 +306,21 @@ func getNums()->(Int, Int) {
 +++ LLVM Compile Framework & Objective-C Runtime +++  ++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
                                                       ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
-++++++++++++++++++ Cocoa Touch +++++++++++++++++++++  ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++ Multi-Touch / Alerts / Core Motion / Web View  ++
+++++++++++++++++++ Cocoa Touch +++++++++++++++++++++  ++ View Hierarchy / Map Kit / Localization / Image Picker ++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++ Controls / Camera ++
                                                       ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++          ++
-++++++++++++++++++++ Media +++++++++++++++++++++++++  ++   Xcode  ++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++          ++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++ Core Audio / JPEG,PNG,TIFF / OpenAL / PDF / Audio Mixing ++
+++++++++++++++++++++ Media +++++++++++++++++++++++++  ++ Quartz(2d) / Audio Recording / Core Animation  ++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++  Video Playback / OpenGL ES ++
                                                       ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
-++++++++++++++++++ Core Services +++++++++++++++++++  ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++ Collections(Core Location) ++
+++++++++++++++++++ Core Services +++++++++++++++++++  ++ Address Book / Net Services / Networking / hreading ++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  +++ File Access / Preferences) / SQLite / URL Utilities ++
                                                       ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
-++++++++++++++++++++ Core OS +++++++++++++++++++++++  ++++++++++++++
-++++++++++++++++++++++++++++++++++++++++++++++++++++  ++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++ OXS Kernel / Power Management +++++++++++
+++++++++++++++++++++ Core OS +++++++++++++++++++++++  ++ Mach 3.0 / Keychain Access / BSD / Certificates +++
+++++++++++++++++++++++++++++++++++++++++++++++++++++  ++ Sockets / File System / Security / Bonjour ++
 ```
 
 ## 如何掌握高级变成语言
@@ -481,3 +481,48 @@ App Transport Security has blocked a cleartext HTTP (http://) resource load sinc
 - 解决方案
   - 1. 在 Info.plist 中添加NSAppTransportSecurity类型Dictionary。
   - 2. 在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean, 值设为YES
+
+## swift4-函数的函数实际参数标签和形式参数名
+
+### 形式参数 = 实际参数标签 + 形式参数名
+
+- 即：每一个函数的 形式参数 都包含 实际参数标签 和 形式参数名。
+- 实际参数标签：用在调用函数的时候（在调用函数的时候每一个实际参数前边都要写实际参数标签）。
+- 形式参数名：用在函数的实现当中
+
+注意：**swift默认**情况下，形式参数使用它们的**形式参数名**作为**实际参数标签**。
+
+例如：
+
+``` swift
+func someFunction(firstParameterName: Int, secondParameterName: Int) {}
+```
+firstParameterName和secondParameterName既是实际参数标签，也是形式参数名。
+
+### 指定实际参数标签
+
+但是有时候为了使函数更具**可读性和语义性**，就可以指定一下**实际参数标签**。
+例如：
+
+``` swift
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)!  Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino"))
+```
+
+代码中的 'frome’就是指定的实际参数标签
+
+### 省略实际参数标签
+
+如果对于函数的形式参数不想使用实际参数标签的话，可以利用下划线（ _ ）来为这个形式参数代替显式的实际参数标签。
+例如：
+
+``` swift
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // In the function body, firstParameterName and secondParameterName
+    // refer to the argument values for the first and second parameters.
+}
+someFunction(1, secondParameterName: 2)
+```
+
