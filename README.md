@@ -526,3 +526,8 @@ func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
 someFunction(1, secondParameterName: 2)
 ```
 
+## 结构体与类的区别
+
+1. 结构体没有继承
+2. 结构体是值类型，类是引用类型
+
