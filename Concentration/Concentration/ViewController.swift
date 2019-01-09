@@ -78,7 +78,7 @@ class ViewController: UIViewController {
 //        } else {
 //          return "?"
 //        }
-        return emoji[card.identifier] ?? "?"
+        return emoji[card.identifier] ?? "😧"
     }
     
 //    @IBAction func touchSecondCard(_ sender: UIButton) {
