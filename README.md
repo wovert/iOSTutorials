@@ -138,6 +138,13 @@
   + Device : iPad/iPhone/Universal(包括iPad和iPhone)
 
 ![设置项目选项](./images/create-pro.png)
+
+- Product Name: 项目名称(study)
+- Organization Name: 组织机构名称/公司名称 (weiming)
+- Organization Identifier: 公司的唯一标识 (com.wovert)
+- Bundle Identifier: 应用程序产品的唯一标识 (com.wovert.study)
+- Language: 开发语言
+
 ![应用程序配置信息](./images/info-plist.png)
 - Key: Main Storyboard file base name: `Main` 对应 `Main。storyboard`
 - 打开 `Main.storyboard主界面`: 应用程序启动之后之行`view Controller`文件
@@ -162,6 +169,7 @@
 
 - 运行程序：command + r
 - 停止程序：command + .
+- 编译程序：command + b
 
 - 显示控件：command + shift + l
 - 编辑区：command + enter
