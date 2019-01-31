@@ -160,6 +160,24 @@
 - 移动行：alt + command + {[|]}
 - 配置编辑器: command + ,
 
+- 运行程序：command + r
+- 停止程序：command + .
+
+- 显示控件：command + shift + l
+- 编辑区：command + enter
+- 两个编辑区：command + option + enter
+- 两个区域显示：command + option + shifit + enter
+
+- ctrl + 1~6
+  - ctrl + 5 显示当前项目文件列表
+  - ctrl + 6 选择文件的代码区域
+
+- 导航区域显示隐藏：command + 0
+  - 导航选项切换：command + 1~6
+- 属性区域显示隐藏：command + alt + 0
+  - 属性切换选项：command + option + 1~6
+- 调试区域显示隐藏：command + shift + y
+  
 ### 创建 OS X命令行程序项目
 
 - 在工作空间创建 New Project -> OS X -> Command Line Too
