@@ -37,11 +37,10 @@
 
 ## Apple 平板电脑
 
-－ 2010 iPad
-－ 2011 iPad 2
-－ 2012 iPad mini
-
-－ 2006 Apple TV
+- 2010 iPad
+- 2011 iPad 2
+- 2012 iPad mini
+- 2006 Apple TV
 
 ## OS X(v10,x:unix)操作系统
 
@@ -55,6 +54,24 @@
 - 2012 OS X 10.8
 - 2013 **OS X 10.9** 省电（后台进程），内存压缩
 - 2014 OS X 10.10
+
+### OS X系统常规设置
+
+- & + w 关闭文件
+- & + q 关闭应用
+- alt + 选择应用 = 强制退出
+
+- 显示隐藏文件
+- `$ defaults write com.apple.finder AppleShowAllFiles -bool true`
+- `$ defaults write com.apple.finder AppleShowAllFiles -bool false`
+
+- `$ ddefaults write com.apple.finder AppleShowAllFiles YES`
+- `$ defaults write com.apple.finder AppleShowAllFiles NO`
+
+### 下载应用
+
+- [macx.cn](https://www.macx.cn)
+- CleanMyMac 应用清理干净删除的应用
 
 ###  OS X系统架构
 
@@ -89,6 +106,19 @@
 - 软件环境要求
   - OS X 10.9.3＋
   - Xcode 6.0+
+
+## Android vs iOS
+
+| 比较   |      iOS      |  Android |
+|----------|:-------------:|------:|
+| 系统架构 |  基于Unix | 基于Linux的虚拟机 |
+| 系统安全性 |    安全、稳定   |   安全性略低 |
+| 开发难易度 | 强大的SDK |    SDK也不差 |
+| 是否开源 | 不开源 |    开源 |
+| 设备的种类 | iPhone/iPad等 |    数不清的设备类型 |
+| 用户人群 | 消费能力强的高端用户 |    各种用户人群 |
+| 背后的BOSS | Apple |    Google |
+| 应用商店 | AppStore(08年上线) |    GooglePlay |
 
 ## 创建项目
 
