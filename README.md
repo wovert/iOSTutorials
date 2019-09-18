@@ -398,19 +398,16 @@ func getNums()->(Int, Int) {
 
 ## ”时空人“三位一体分析法
 
-- 对时间分析 —— 发生在什么时候？
-  - compile-time VS run-time
-- 空间分析 —— 变量放在哪里
-  - stack VS heap
-- 人物分析 —— 代码哪里来的？
-  - programmer VS compiler/runtime/framework
+- 对时间分析 —— 发生在什么时候？**compile-time VS run-time**
+- 空间分析 —— 变量放在哪里? **stack VS heap**
+- 人物分析 —— 代码哪里来的？**programmer VS compiler/runtime/framework**
 
 ## 两种开发方式
 
-- 1. Clang 或 GCC 命令行
-  - `# clang -fobjc-arc HelloWorld.m`
-  - `-fobjc-arc` 支持ARC内存管理
-  － 适合调试、研究、微观探测
+- 1. **Clang** 或 **gcc** 命令行
+  - `# clang/gcc -fobjc-arc HelloWorld.m -o HelloWorld`
+    - `-fobjc-arc` 支持ARC内存管理
+    － 适合调试、研究、微观探测
 - 2. Xcode 项目
   - 构建正规工程项目
   - 使用大型框架，追求设计质量与代码组织
@@ -433,7 +430,9 @@ $ clang --help
 
 ## ObjC 编译过程
 
-前段工具 －> 优化器 －> 代码生成器
+编译前段工具(gcc/clang) －> 优化器 －> 代码生成器
+
+LLVM: Low Level VirtualMachine
 
 ![ObjC 编译流程](./images/objc-flow.png)
 
@@ -447,7 +446,11 @@ $ clang --help
   - [2017](https://developer.apple.com/videos/wwdc2017/)
   - [2018](https://developer.apple.com/videos/wwdc2018/)
 
-## 类与对象
+---
+
+## ObjectC 语言
+
+### 类与对象
 
 - 引用类型 reference type
   - 类 class
