@@ -472,6 +472,172 @@ LLVM: Low Level VirtualMachine
   - 2015，4(Swift) 
   - [编程语言排名网站](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
 
+### OC 与 C 对比
+
+#### 源文件对比
+
+- C语言源文件.h头文件，.文件
+
+| 文件扩展名 | 源类型 |
+| ---- |   ---- |
+| .h  | 头文件，用于存放函数声明 |
+| .c  | C语言文件，用于实现头文件中声明的方法 |
+
+- OC 中的源文件 .h 头文件，.m 与 .mm 的实现文件
+
+| 文件扩展名 | 源类型 |
+| ---- |   ---- |
+| .h  | 头文件，用于包含类、方法、属性的声明 |
+| .m/.mm  | 类的实现文件，参与编译的文件，用来实现类中声明的方法 |
+
+#### 关键词对比
+
+- C 语言的关键词都可以在 OC源程序中使用
+- OC新增的关键字在使用时，注意部分关键字以“@”开头
+
+- C语言关键字：auto double int truct break else long switch case enum register typedef char extern return union const float short unsigned continue or signe void default goto sizeof volatile do if whie static
+- OC 中新增的关键字：@interface @implementation @end @public @protected @private @selector @try @catch @throw @finally @protocol @optional @required @class @property @synthesize @dynamic BOOL Class SEL YES NO id self super nil atomic nonatomic retain assign copy block
+
+#### 数据类型对比
+
+- C 语言的数据类型
+  - 基本数据类型
+    - 整型
+      - 短整型
+      - 整型
+      - 长整型
+    - 字符型
+    - 浮点型
+      - 单精度
+      - 双精度
+  - 构造类型
+    - 数组
+    - 结构体
+    - 枚举
+    - 共用体
+  - 指针类型
+  - 空类型（void）
+- OC 语言的数据类型
+  - 基本数据类型
+    - 整型
+      - 短整型
+      - 整型
+      - 长整型
+      - **布尔类型(BOOL)**
+    - 字符型
+    - 浮点型
+      - 单精度
+      - 双精度
+  - **Block 类型**
+  - 构造类型
+    - 数组
+    - 结构体
+    - 枚举
+    - 共用体
+  - 指针类型
+    - 类
+    - **id 类型**
+  - 空类型
+  - **特殊类型(SEL、nil)**
+
+
+| 类型 | 描述 |
+| ---- |   ---- |
+| BOOL  | 只有两个值真(YES)和假(NO) |
+| NSObject *  | OC 中的对象类型 |
+| id  | 动态对象类型，万能指针 |
+| SEL  | 选择器数据类型 |
+| block  | 代码块数据类型 |
+
+- OC 中的类
+  - 类是用来描述对象的，是一系列方法和属性的集合
+  - OC的类声明和实现包括两个部分；**接口部分和实现部分**
+
+
+#### 流程控制语句对比
+
+- C 语言中使用的流程控制语句OC中都可以应用
+  - if statement
+  - switch statment
+  - while statement
+  - do while statement
+  - for statement
+  - break
+  - continue
+
+- 增强 for 循环，用于快速迭代数组或集合
+```c
+for (int i=0; i<10; i++) {
+  printf("%d", i);
+}
+```
+
+```oc
+for (NSString * name in NSArray) {
+  NSLog(@"%@", name);
+}
+```
+
+#### 函数(方法)定义和声明对比
+
+- C 语言中函数的声明和实现
+  - 函数声明：`int sum(int a, int b);`
+  - 函数实现：`int sum(int a, int b) { return a + b; }`
+- OC 中的方法
+  - 方法声明：`-(int)sum:(int) a andB:(int) b;`
+  - 方法实现：`-(int)sum:(int) a andB:(int) b { return a + b;}`
+
+```oc
+对象方法
+-(id)initWithString: (NSString *) name;
+
+类型方法
++ (MyClass *)createMyClassWithString: (NSString *)name;
+```
+
+#### 面向对象新增语法
+
+- 属性生成器
+  - @property
+  - @synthesize
+
+```
+声明属性
+@property (nonatomic, strong) NSString * name;
+
+合成属性
+@synthesize name = _name;
+```
+
+- 分类
+  - 分类与继承
+  - 使用分类扩展类，无需子类华
+
+```oc
+@interface NSString (MyNSString)
+- (NSString *) encryptWithMD5;
+@end
+```
+
+- 协议
+  - 使用协议声明方法
+  - 协议类似于接口
+
+```oc
+@protocol MyProtocol
+-(void)myProtocolMethod;
+@end
+```
+
+- Foundation 框架
+  - 创建和管理集合，如数组和字典
+  - 访问存储应用中的图像和其他资源
+  - 创建和管理字符串
+  - 发布和观察通知
+  - 创建日期和时间对象
+  - 操控URL流
+  - 异步执行代码
+
 ### 类与对象
 
 - 引用类型 reference type
