@@ -450,10 +450,32 @@ LLVM: Low Level VirtualMachine
 
 ## ObjectC 语言
 
+### Objective-C
+
+> 面向对象语言，C语言的基础上增加了一层最小的面向对象语法，兼容C语言，OC 代码中混入C语言代码，甚至是C++ 代码。可以开发Mac OS X和iOS 移动开发。
+
+### Objective-C发展现状
+
+- 1986， BradCox 第一个纯面向对象语言 **Smalltalk** 基础上写成了 Ojective-C 语言
+- 1985，乔布斯被赶出 Apple，成立 NeXT 公司，致力于开发强大且经济的工作站。NeXT 选择 Unix 作为其 OS
+- 1988，Steve Jobs 获得了 Objective-C 的使用权，使用 Objective-C 编写 **NeXTSTEP OS**，NeXTSTEP OS 操作更加容易。
+- 1994，**NeXT** 和 **SUN** 共同指定制定 **OpenStep API** 标准，其中两个重要的部分是 **Foundation(框架：可以开发Mac OS X程序和iOS程序)** 跟 **Application Kit(PC端界面)**，此时开始命名前缀 `NS`。
+- 1995, NeXT 从 Stepstone 获得了 Objective-C 全部版权
+- 1996， Steve Jobs 重回苹果公司，把 OpenStep 用于 Mac OS X 操作系统开发，他的版本和开发环境叫 **Cocoa**, 使用 Objective-C 作为基础语言，开发工具 **Xcode** 和 **Interface Builder**。
+- 2007，Apple 公司推出 Objective-C2.0，Objective-C 是 Mac OS X 和 iOS 开发的基础语言
+
+- Objective-C编程语言排名
+  - 2009，32
+  - 2010，8(iPhone 4)
+  - 2011，6
+  - 2014，3
+  - 2015，4(Swift) 
+  - [编程语言排名网站](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
+
 ### 类与对象
 
 - 引用类型 reference type
-  - 类 class
+  - 类 class（占80%）
   - 指针 pointer
   - 块 block
 - 值类型 value type
