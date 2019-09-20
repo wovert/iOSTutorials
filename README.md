@@ -638,6 +638,11 @@ for (NSString * name in NSArray) {
   - 操控URL流
   - 异步执行代码
 
+#### 新增异常处理
+
+- 用于处理错误信息
+- 格式：`@try ... @catch ... @finally`
+
 ### 类与对象
 
 - 引用类型 reference type
