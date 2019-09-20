@@ -57,9 +57,9 @@
 
 ### OS X系统常规设置
 
-- & + w 关闭文件
-- & + q 关闭应用
-- alt + 选择应用 = 强制退出
+- `& + w` 关闭文件
+- `& + q` 关闭应用
+- `alt + 选择应用` = 强制退出
 
 - 显示隐藏文件
 - `$ defaults write com.apple.finder AppleShowAllFiles -bool true`
@@ -75,7 +75,7 @@
 
 ###  OS X系统架构
 
-- C/C++, Object-C, Swift => OS x => Unix
+- C/C++, Objective-C, Swift => OS x => Unix
 
 ## iOS history
 
@@ -246,7 +246,7 @@
   - hardware 菜单控制模拟器（方向、旋转等操作）
   - 回到主页面：command + shift + h
 - 真机中运行程序
-  - 1. 必须有开发者证书：https://developer.apple.com/devcenter/
+  - 1. 必须有开发者证书：https://developer.apple.com
   - 2. 工程项目配置中与真机OS版本一直
     - Deployment Info -> Deployment Target
     - 运行程序

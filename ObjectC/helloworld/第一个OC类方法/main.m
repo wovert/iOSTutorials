@@ -64,7 +64,7 @@ typedef enum {
     
     NSLog(@"打印本机信息");
     
-    NSString *color = [Iphone colorWithNumber:(IColor)kIColorBlack];
+    NSString *color = [Iphone colorWithNumber:(IColor)kIColorTuhaojin];
     NSLog(@"大小=%f,型号=%f, cpu=%i,颜色=%@", _size, _model, _cpu, color);
 }
 - (char *)loadMessage {
