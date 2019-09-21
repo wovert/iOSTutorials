@@ -4,6 +4,6 @@
 @implementation RPoint
 
 -(void) print{
-    NSLog(@"[%d, %d]", self.x, self.y);
+    NSLog(@"[rp->x=%d, rp->y=%d]", self.x, self.y);
 }
 @end
