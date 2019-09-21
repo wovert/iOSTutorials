@@ -675,6 +675,7 @@ for (NSString * name in NSArray) {
 
 ![对象内存空间分析](./images/object-in-memory.png)
 ![结构内存空间分析](./images/struct-in-memory.png)
+![结构内存空间分析](./images/copy_after.jpg)
 
 ### Stack VS Heap
 
