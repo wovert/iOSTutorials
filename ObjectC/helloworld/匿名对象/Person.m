@@ -15,4 +15,20 @@
 -(void)signal:(Iphone *)phone {
     [phone callWithNumber:123456];
 }
+-(void)setName: (NSString *) name {
+    self->_name = name;
+}
+-(void)setAge:(int)age {
+    self->_age = age;
+}
+-(NSString *)name {
+    return self->_name;
+}
+-(int)age {
+    return self->_age;
+}
+-(NSString *)description {
+    NSString *str = [NSString stringWithFormat: @"name=%@,age=%i", self.name, self.age];
+    return str;
+}
 @end

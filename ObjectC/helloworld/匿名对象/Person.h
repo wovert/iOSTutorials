@@ -15,6 +15,10 @@
     NSString *_name;
     int _age;
 }
+-(void)setName: (NSString *) name;
+-(void)setAge: (int) age;
+-(NSString *)name;
+-(int)age;
 -(void)say;
 -(void)signal: (Iphone *)phone;
 @end
