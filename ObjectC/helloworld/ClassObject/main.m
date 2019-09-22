@@ -24,6 +24,11 @@ int main(int argc, const char * argv[]) {
         
         [rp1 print];
         
+        [RPoint setMax:32];
+        RPoint.max = 400;
+        NSLog(@"class variable is %d", RPoint.max);
+        
+        
         // 值类型
         SPoint sp1;
         sp1.x = 10;

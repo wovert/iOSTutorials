@@ -10,13 +10,13 @@
 #import <Foundation/Foundation.h>
 
 // C 和 OC 的源文件组合在一起生成可执行文件
-#import "zs.h"
+#import "zs.h“
 
 int main(int argc, const char * argv[]) {
-//    @autoreleasepool {
-//        // insert code here...
-//        NSLog(@"Hello, World!");
-//    }
+@autoreleasepool {
+    // insert code here...
+    NSLog(@"Hello, World!");
+}
     
     
     /*

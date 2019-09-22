@@ -472,6 +472,10 @@ LLVM: Low Level VirtualMachine
   - 2015，4(Swift) 
   - [编程语言排名网站](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)
 
+### 修改项目模版
+
+application/xcode/Contents/Developer/Libraries/Xcode/Templates/Project Templates/Mac/Application/
+
 ### OC 与 C 对比
 
 #### 源文件对比
@@ -723,9 +727,27 @@ for (NSString * name in NSArray) {
 - 如果同时自定义了getter和setter访问器的方法，或者针对只读属性定义了 getter访问器方法，编译器将不再合成实例变量。
 
 - 再类外一律使用属性来访问，类内大多也通过 self 使用属性访问。只有一下情况使用实例变量来访问
-  - 初始化器 init
-  - 析构器 dealloc
+  - 初始化器 `init`
+  - 析构器 `dealloc`
   - 自定义访问器方法
+
+#### 描述属性特性
+
+- 读写特性
+  - 读写特性 readwrite (默认)
+  - 只读属性 readonly
+- 多线程特性
+  - 原子性 atomic(默认)
+  - 非原子性 nonatomic
+- 内存管理特性
+  - ARC 环境
+    - 强引用 strong (默认)
+    - 弱引用 weak 阻止循环引用
+    - 拷贝属性 copy 创建独立拷贝
+  - 其他情况
+    - retain
+    - assing
+    - unsafe_unretained
 
 
 ## Warning

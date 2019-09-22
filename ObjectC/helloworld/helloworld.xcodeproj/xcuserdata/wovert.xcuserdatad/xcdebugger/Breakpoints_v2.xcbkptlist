@@ -74,13 +74,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "C&#x548c;OC&#x7684;&#x5b57;&#x7b26;&#x4e32;&#x6bd4;&#x8f83;/main.m"
-            timestampString = "590768811.319829"
+            timestampString = "590770281.206336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
             landmarkName = "main()"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x591a;&#x6587;&#x4ef6;&#x5f00;&#x53d1;/Gun.h"
+            timestampString = "590810121.6343"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-shoot"
+            landmarkType = "6">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
