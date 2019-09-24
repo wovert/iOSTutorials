@@ -89,6 +89,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>类工厂方法.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
 		<key>结构体作为对象属性.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
