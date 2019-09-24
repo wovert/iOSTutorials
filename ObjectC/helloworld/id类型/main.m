@@ -30,8 +30,8 @@ int main(int argc, const char * argv[]) {
         // NSObject * 是一个静态数据类型
         // id 是一个动态数据类型
         NSObject *p2 = [Person new];
-        p.age = 40;
-        [p eat];
+//        p2.age = 40;
+//        [p2 eat];
 //        [p test]; // 不能调用私有方法
         
         // 静态数据类型定义的变量，不能调用子嘞特有的方法

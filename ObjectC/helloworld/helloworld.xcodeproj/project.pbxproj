@@ -35,6 +35,13 @@
 		B6650812233997B7005C391A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650811233997B7005C391A /* main.m */; };
 		B6650818233999AC005C391A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650817233999AC005C391A /* Person.m */; };
 		B665081B23399A37005C391A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B665081A23399A37005C391A /* Student.m */; };
+		B66508232339C8EC005C391A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66508222339C8EC005C391A /* main.m */; };
+		B66508292339C8FA005C391A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B66508282339C8FA005C391A /* Person.m */; };
+		B6650831233A0467005C391A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650830233A0467005C391A /* main.m */; };
+		B665083F233A3D39005C391A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B665083E233A3D39005C391A /* main.m */; };
+		B6650844233A3D60005C391A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650836233A0701005C391A /* Person.m */; };
+		B6650847233A3D6D005C391A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650846233A3D6D005C391A /* Person.m */; };
+		B665084A233A3D9F005C391A /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650849233A3D9F005C391A /* Student.m */; };
 		B6A72C7723358B8D001DE333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A72C7623358B8D001DE333 /* main.m */; };
 		B6A72C822335A128001DE333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A72C812335A128001DE333 /* main.m */; };
 		B6A72C882335A1AC001DE333 /* RPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A72C872335A1AC001DE333 /* RPoint.m */; };
@@ -177,6 +184,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		B665081E2339C8EC005C391A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B665082C233A0466005C391A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B665083A233A3D39005C391A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B6A72C7223358B8D001DE333 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +288,20 @@
 		B6650817233999AC005C391A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B665081923399A37005C391A /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		B665081A23399A37005C391A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B66508202339C8EC005C391A /* new方法实现原理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "new方法实现原理"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66508222339C8EC005C391A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B66508272339C8FA005C391A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B66508282339C8FA005C391A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B665082E233A0466005C391A /* 自定义构造方法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "自定义构造方法"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6650830233A0467005C391A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6650835233A0701005C391A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B6650836233A0701005C391A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B665083C233A3D39005C391A /* 自定义方法在继承中的表现 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "自定义方法在继承中的表现"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B665083E233A3D39005C391A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6650845233A3D6D005C391A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B6650846233A3D6D005C391A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B6650848233A3D9F005C391A /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B6650849233A3D9F005C391A /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		B6A72C7423358B8D001DE333 /* 第二个OC类 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "第二个OC类"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A72C7623358B8D001DE333 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6A72C7F2335A128001DE333 /* ClassObject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClassObject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -363,6 +411,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B665080C233997B7005C391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B665081D2339C8EC005C391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B665082B233A0466005C391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6650839233A3D39005C391A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,6 +555,9 @@
 				B66507F223398FFB005C391A /* property增强 */,
 				B66508022339933E005C391A /* property修饰符 */,
 				B6650810233997B7005C391A /* id类型 */,
+				B66508212339C8EC005C391A /* new方法实现原理 */,
+				B665082F233A0467005C391A /* 自定义构造方法 */,
+				B665083D233A3D39005C391A /* 自定义方法在继承中的表现 */,
 				B664809D2331A9CC00CCD9A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -510,6 +582,9 @@
 				B66507F123398FFA005C391A /* property增强 */,
 				B66508012339933E005C391A /* property修饰符 */,
 				B665080F233997B7005C391A /* id类型 */,
+				B66508202339C8EC005C391A /* new方法实现原理 */,
+				B665082E233A0466005C391A /* 自定义构造方法 */,
+				B665083C233A3D39005C391A /* 自定义方法在继承中的表现 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -578,6 +653,38 @@
 				B665081A23399A37005C391A /* Student.m */,
 			);
 			path = "id类型";
+			sourceTree = "<group>";
+		};
+		B66508212339C8EC005C391A /* new方法实现原理 */ = {
+			isa = PBXGroup;
+			children = (
+				B66508222339C8EC005C391A /* main.m */,
+				B66508272339C8FA005C391A /* Person.h */,
+				B66508282339C8FA005C391A /* Person.m */,
+			);
+			path = "new方法实现原理";
+			sourceTree = "<group>";
+		};
+		B665082F233A0467005C391A /* 自定义构造方法 */ = {
+			isa = PBXGroup;
+			children = (
+				B6650830233A0467005C391A /* main.m */,
+				B6650835233A0701005C391A /* Person.h */,
+				B6650836233A0701005C391A /* Person.m */,
+			);
+			path = "自定义构造方法";
+			sourceTree = "<group>";
+		};
+		B665083D233A3D39005C391A /* 自定义方法在继承中的表现 */ = {
+			isa = PBXGroup;
+			children = (
+				B665083E233A3D39005C391A /* main.m */,
+				B6650845233A3D6D005C391A /* Person.h */,
+				B6650846233A3D6D005C391A /* Person.m */,
+				B6650848233A3D9F005C391A /* Student.h */,
+				B6650849233A3D9F005C391A /* Student.m */,
+			);
+			path = "自定义方法在继承中的表现";
 			sourceTree = "<group>";
 		};
 		B6A72C7523358B8D001DE333 /* 第二个OC类 */ = {
@@ -857,6 +964,57 @@
 			productReference = B665080F233997B7005C391A /* id类型 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B665081F2339C8EC005C391A /* new方法实现原理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B66508262339C8EC005C391A /* Build configuration list for PBXNativeTarget "new方法实现原理" */;
+			buildPhases = (
+				B665081C2339C8EC005C391A /* Sources */,
+				B665081D2339C8EC005C391A /* Frameworks */,
+				B665081E2339C8EC005C391A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "new方法实现原理";
+			productName = "new方法实现原理";
+			productReference = B66508202339C8EC005C391A /* new方法实现原理 */;
+			productType = "com.apple.product-type.tool";
+		};
+		B665082D233A0466005C391A /* 自定义构造方法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6650834233A0467005C391A /* Build configuration list for PBXNativeTarget "自定义构造方法" */;
+			buildPhases = (
+				B665082A233A0466005C391A /* Sources */,
+				B665082B233A0466005C391A /* Frameworks */,
+				B665082C233A0466005C391A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义构造方法";
+			productName = "自定义构造方法";
+			productReference = B665082E233A0466005C391A /* 自定义构造方法 */;
+			productType = "com.apple.product-type.tool";
+		};
+		B665083B233A3D39005C391A /* 自定义方法在继承中的表现 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6650840233A3D39005C391A /* Build configuration list for PBXNativeTarget "自定义方法在继承中的表现" */;
+			buildPhases = (
+				B6650838233A3D39005C391A /* Sources */,
+				B6650839233A3D39005C391A /* Frameworks */,
+				B665083A233A3D39005C391A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义方法在继承中的表现";
+			productName = "自定义方法在继承中的表现";
+			productReference = B665083C233A3D39005C391A /* 自定义方法在继承中的表现 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B6A72C7323358B8D001DE333 /* 第二个OC类 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6A72C7A23358B8D001DE333 /* Build configuration list for PBXNativeTarget "第二个OC类" */;
@@ -945,6 +1103,15 @@
 					B665080E233997B7005C391A = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					B665081F2339C8EC005C391A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					B665082D233A0466005C391A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					B665083B233A3D39005C391A = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					B6A72C7323358B8D001DE333 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -982,6 +1149,9 @@
 				B66507F023398FFA005C391A /* property增强 */,
 				B66508002339933E005C391A /* property修饰符 */,
 				B665080E233997B7005C391A /* id类型 */,
+				B665081F2339C8EC005C391A /* new方法实现原理 */,
+				B665082D233A0466005C391A /* 自定义构造方法 */,
+				B665083B233A3D39005C391A /* 自定义方法在继承中的表现 */,
 			);
 		};
 /* End PBXProject section */
@@ -1117,6 +1287,34 @@
 				B6650818233999AC005C391A /* Person.m in Sources */,
 				B6650812233997B7005C391A /* main.m in Sources */,
 				B665081B23399A37005C391A /* Student.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B665081C2339C8EC005C391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66508292339C8FA005C391A /* Person.m in Sources */,
+				B66508232339C8EC005C391A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B665082A233A0466005C391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6650844233A3D60005C391A /* Person.m in Sources */,
+				B6650831233A0467005C391A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6650838233A3D39005C391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6650847233A3D6D005C391A /* Person.m in Sources */,
+				B665083F233A3D39005C391A /* main.m in Sources */,
+				B665084A233A3D9F005C391A /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1523,6 +1721,60 @@
 			};
 			name = Release;
 		};
+		B66508242339C8EC005C391A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B66508252339C8EC005C391A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6650832233A0467005C391A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6650833233A0467005C391A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6650841233A3D39005C391A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6650842233A3D39005C391A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B6A72C7823358B8D001DE333 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1702,6 +1954,33 @@
 			buildConfigurations = (
 				B6650814233997B7005C391A /* Debug */,
 				B6650815233997B7005C391A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B66508262339C8EC005C391A /* Build configuration list for PBXNativeTarget "new方法实现原理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B66508242339C8EC005C391A /* Debug */,
+				B66508252339C8EC005C391A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6650834233A0467005C391A /* Build configuration list for PBXNativeTarget "自定义构造方法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6650832233A0467005C391A /* Debug */,
+				B6650833233A0467005C391A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6650840233A3D39005C391A /* Build configuration list for PBXNativeTarget "自定义方法在继承中的表现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6650841233A3D39005C391A /* Debug */,
+				B6650842233A3D39005C391A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
