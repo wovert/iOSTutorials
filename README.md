@@ -749,6 +749,20 @@ for (NSString * name in NSArray) {
     - assing
     - unsafe_unretained
 
+### 类的本质
+
+- 实例对象(isa)->类对象(isa，存储属性和对象方法)->元类对象(isa，存储类方法)->根元类对象(isa指向自己，即NSObjet的元类对象)
+
+### 类的启动过程
+
+程序启动将会代码加载到内存中，放到代码区
+
+load方法会在当前类被加载到内存的时候调用，有且仅会调用一次
+
++(void)load {
+  NSLog(@"Person类被加载到内存");
+}
+
 
 ## Warning
 
