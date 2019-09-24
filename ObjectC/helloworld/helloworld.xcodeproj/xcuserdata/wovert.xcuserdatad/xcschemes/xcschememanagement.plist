@@ -19,10 +19,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>id类型.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>property修饰符.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>property基本使用.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>12</integer>
+		</dict>
+		<key>property增强.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
 		</dict>
 		<key>sddd.xcscheme_^#shared#^_</key>
 		<dict>
@@ -47,7 +62,7 @@
 		<key>私有变量和私有方法.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>13</integer>
 		</dict>
 		<key>第一个OC类-方法.xcscheme_^#shared#^_</key>
 		<dict>
@@ -72,12 +87,12 @@
 		<key>结构体作为对象属性.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>8</integer>
 		</dict>
 		<key>结构体作为方法参数.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>6</integer>
 		</dict>
 	</dict>
 </dict>
