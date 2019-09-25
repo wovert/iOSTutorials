@@ -13,6 +13,7 @@
 		B659DEF1233B94E9001AFCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B659DEF0233B94E9001AFCB7 /* Assets.xcassets */; };
 		B659DEF4233B94E9001AFCB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B659DEF2233B94E9001AFCB7 /* LaunchScreen.storyboard */; };
 		B659DEF7233B94E9001AFCB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B659DEF6233B94E9001AFCB7 /* main.m */; };
+		B6653ED8233C2394007E4D74 /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6653ED7233C2394007E4D74 /* SecondStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B659DEF3233B94E9001AFCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B659DEF5233B94E9001AFCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B659DEF6233B94E9001AFCB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6653ED7233C2394007E4D74 /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B659DEEA233B94E7001AFCB7 /* ViewController.h */,
 				B659DEEB233B94E7001AFCB7 /* ViewController.m */,
 				B659DEED233B94E7001AFCB7 /* Main.storyboard */,
+				B6653ED7233C2394007E4D74 /* SecondStoryboard.storyboard */,
 				B659DEF0233B94E9001AFCB7 /* Assets.xcassets */,
 				B659DEF2233B94E9001AFCB7 /* LaunchScreen.storyboard */,
 				B659DEF5233B94E9001AFCB7 /* Info.plist */,
@@ -131,6 +134,7 @@
 				B659DEF4233B94E9001AFCB7 /* LaunchScreen.storyboard in Resources */,
 				B659DEF1233B94E9001AFCB7 /* Assets.xcassets in Resources */,
 				B659DEEF233B94E7001AFCB7 /* Main.storyboard in Resources */,
+				B6653ED8233C2394007E4D74 /* SecondStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

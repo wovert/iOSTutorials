@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+// IBOutlet 输出口
+//@property (nonatomic, strong) IBOutlet UILabel *label;
 @end
 

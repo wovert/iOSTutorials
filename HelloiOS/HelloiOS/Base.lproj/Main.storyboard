@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's Color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-zs-CB4">
-                                <rect key="frame" x="153" y="135" width="108" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="text" text="What's Color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-zs-CB4">
+                                <rect key="frame" x="20" y="135" width="374" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -32,9 +32,7 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="blueClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="FIq-aC-tPU"/>
-                                    <action selector="greenClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="18e-T2-LZi"/>
-                                    <action selector="redClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="3po-Oc-AYc"/>
+                                    <action selector="redClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="5Pe-AQ-nbW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMq-lo-VZE">
@@ -44,7 +42,7 @@
                                     <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="greenClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="u3b-8s-GiU"/>
+                                    <action selector="greenClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="Bks-52-qFY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXK-DO-khG">
@@ -54,17 +52,20 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="blueClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="Je2-kj-Q5o"/>
+                                    <action selector="blueClick" destination="fMN-0U-Nt7" eventType="touchUpInside" id="CzV-gu-lMb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zWz-TG-XMw"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="yi7-zs-CB4" id="zTi-PL-Wdt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3q-Ba-SrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642" y="30"/>
+            <point key="canvasLocation" x="-642.02898550724638" y="29.464285714285712"/>
         </scene>
     </scenes>
 </document>
