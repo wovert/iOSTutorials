@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6567FD8233C3D6400B42077 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6567FD7233C3D6400B42077 /* main.m */; };
+		B6567FDE233C3DD400B42077 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6567FDD233C3DD400B42077 /* Person.m */; };
 		B658ED1C2336EDAF00DD7210 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B658ED1B2336EDAF00DD7210 /* main.m */; };
 		B658ED272337024E00DD7210 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B658ED262337024E00DD7210 /* main.m */; };
 		B658ED2F2337032900DD7210 /* Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = B658ED2E2337032900DD7210 /* Clip.m */; };
@@ -62,6 +64,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B6567FD3233C3D6400B42077 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B658ED172336EDAF00DD7210 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +302,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6567FD5233C3D6400B42077 /* 野指针和空指针 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "野指针和空指针"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6567FD7233C3D6400B42077 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6567FDC233C3DD400B42077 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B6567FDD233C3DD400B42077 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B658ED192336EDAF00DD7210 /* 对象作为方法的参数传递 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "对象作为方法的参数传递"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658ED1B2336EDAF00DD7210 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B658ED242337024E00DD7210 /* 多文件开发 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "多文件开发"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -399,6 +414,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6567FD2233C3D6400B42077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B658ED162336EDAF00DD7210 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,6 +599,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6567FD6233C3D6400B42077 /* 野指针和空指针 */ = {
+			isa = PBXGroup;
+			children = (
+				B6567FD7233C3D6400B42077 /* main.m */,
+				B6567FDC233C3DD400B42077 /* Person.h */,
+				B6567FDD233C3DD400B42077 /* Person.m */,
+			);
+			path = "野指针和空指针";
+			sourceTree = "<group>";
+		};
 		B658ED1A2336EDAF00DD7210 /* 对象作为方法的参数传递 */ = {
 			isa = PBXGroup;
 			children = (
@@ -695,6 +727,7 @@
 				B66542FD233AD2DD00A205BA /* 类的启动过程 */,
 				B665430E233AD64800A205BA /* SEL类型 */,
 				B659DED2233AEE57001AFCB7 /* 引用计数器 */,
+				B6567FD6233C3D6400B42077 /* 野指针和空指针 */,
 				B664809D2331A9CC00CCD9A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -727,6 +760,7 @@
 				B66542FC233AD2DD00A205BA /* 类的启动过程 */,
 				B665430D233AD64800A205BA /* SEL类型 */,
 				B659DED1233AEE57001AFCB7 /* 引用计数器 */,
+				B6567FD5233C3D6400B42077 /* 野指针和空指针 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -899,6 +933,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6567FD4233C3D6400B42077 /* 野指针和空指针 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6567FDB233C3D6400B42077 /* Build configuration list for PBXNativeTarget "野指针和空指针" */;
+			buildPhases = (
+				B6567FD1233C3D6400B42077 /* Sources */,
+				B6567FD2233C3D6400B42077 /* Frameworks */,
+				B6567FD3233C3D6400B42077 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "野指针和空指针";
+			productName = "野指针和空指针";
+			productReference = B6567FD5233C3D6400B42077 /* 野指针和空指针 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B658ED182336EDAF00DD7210 /* 对象作为方法的参数传递 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B658ED1F2336EDAF00DD7210 /* Build configuration list for PBXNativeTarget "对象作为方法的参数传递" */;
@@ -1333,6 +1384,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = wovert;
 				TargetAttributes = {
+					B6567FD4233C3D6400B42077 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					B658ED182336EDAF00DD7210 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -1447,11 +1501,21 @@
 				B66542FB233AD2DD00A205BA /* 类的启动过程 */,
 				B665430C233AD64800A205BA /* SEL类型 */,
 				B659DED0233AEE57001AFCB7 /* 引用计数器 */,
+				B6567FD4233C3D6400B42077 /* 野指针和空指针 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B6567FD1233C3D6400B42077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6567FDE233C3DD400B42077 /* Person.m in Sources */,
+				B6567FD8233C3D6400B42077 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B658ED152336EDAF00DD7210 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1682,6 +1746,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B6567FD9233C3D6400B42077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6567FDA233C3D6400B42077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B658ED1D2336EDAF00DD7210 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2250,6 +2334,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6567FDB233C3D6400B42077 /* Build configuration list for PBXNativeTarget "野指针和空指针" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6567FD9233C3D6400B42077 /* Debug */,
+				B6567FDA233C3D6400B42077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B658ED1F2336EDAF00DD7210 /* Build configuration list for PBXNativeTarget "对象作为方法的参数传递" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
