@@ -22,9 +22,13 @@
 -(void)run {
     NSLog(@"run method...");
 }
+- (IBAction)btnClick {
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)btnClick {
 }
 
 #pragma mark 监听红色按钮点击

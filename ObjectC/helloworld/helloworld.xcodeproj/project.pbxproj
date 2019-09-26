@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B6567FD8233C3D6400B42077 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6567FD7233C3D6400B42077 /* main.m */; };
 		B6567FDE233C3DD400B42077 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6567FDD233C3DD400B42077 /* Person.m */; };
+		B6567FF9233CE34500B42077 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6567FF8233CE34500B42077 /* main.m */; };
+		B6567FFF233CE36800B42077 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = B6567FFE233CE36800B42077 /* Room.m */; };
+		B6568002233CE37400B42077 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6568001233CE37400B42077 /* Person.m */; };
 		B658ED1C2336EDAF00DD7210 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B658ED1B2336EDAF00DD7210 /* main.m */; };
 		B658ED272337024E00DD7210 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B658ED262337024E00DD7210 /* main.m */; };
 		B658ED2F2337032900DD7210 /* Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = B658ED2E2337032900DD7210 /* Clip.m */; };
@@ -65,6 +68,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B6567FD3233C3D6400B42077 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B6567FF4233CE34500B42077 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -306,6 +318,12 @@
 		B6567FD7233C3D6400B42077 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6567FDC233C3DD400B42077 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B6567FDD233C3DD400B42077 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B6567FF6233CE34500B42077 /* 多对象内存管理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "多对象内存管理"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6567FF8233CE34500B42077 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6567FFD233CE36800B42077 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		B6567FFE233CE36800B42077 /* Room.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		B6568000233CE37400B42077 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B6568001233CE37400B42077 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B658ED192336EDAF00DD7210 /* 对象作为方法的参数传递 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "对象作为方法的参数传递"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658ED1B2336EDAF00DD7210 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B658ED242337024E00DD7210 /* 多文件开发 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "多文件开发"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -415,6 +433,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		B6567FD2233C3D6400B42077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6567FF3233CE34500B42077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -609,6 +634,18 @@
 			path = "野指针和空指针";
 			sourceTree = "<group>";
 		};
+		B6567FF7233CE34500B42077 /* 多对象内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				B6567FF8233CE34500B42077 /* main.m */,
+				B6567FFD233CE36800B42077 /* Room.h */,
+				B6567FFE233CE36800B42077 /* Room.m */,
+				B6568000233CE37400B42077 /* Person.h */,
+				B6568001233CE37400B42077 /* Person.m */,
+			);
+			path = "多对象内存管理";
+			sourceTree = "<group>";
+		};
 		B658ED1A2336EDAF00DD7210 /* 对象作为方法的参数传递 */ = {
 			isa = PBXGroup;
 			children = (
@@ -728,6 +765,7 @@
 				B665430E233AD64800A205BA /* SEL类型 */,
 				B659DED2233AEE57001AFCB7 /* 引用计数器 */,
 				B6567FD6233C3D6400B42077 /* 野指针和空指针 */,
+				B6567FF7233CE34500B42077 /* 多对象内存管理 */,
 				B664809D2331A9CC00CCD9A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -761,6 +799,7 @@
 				B665430D233AD64800A205BA /* SEL类型 */,
 				B659DED1233AEE57001AFCB7 /* 引用计数器 */,
 				B6567FD5233C3D6400B42077 /* 野指针和空指针 */,
+				B6567FF6233CE34500B42077 /* 多对象内存管理 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -948,6 +987,23 @@
 			name = "野指针和空指针";
 			productName = "野指针和空指针";
 			productReference = B6567FD5233C3D6400B42077 /* 野指针和空指针 */;
+			productType = "com.apple.product-type.tool";
+		};
+		B6567FF5233CE34500B42077 /* 多对象内存管理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6567FFC233CE34500B42077 /* Build configuration list for PBXNativeTarget "多对象内存管理" */;
+			buildPhases = (
+				B6567FF2233CE34500B42077 /* Sources */,
+				B6567FF3233CE34500B42077 /* Frameworks */,
+				B6567FF4233CE34500B42077 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "多对象内存管理";
+			productName = "多对象内存管理";
+			productReference = B6567FF6233CE34500B42077 /* 多对象内存管理 */;
 			productType = "com.apple.product-type.tool";
 		};
 		B658ED182336EDAF00DD7210 /* 对象作为方法的参数传递 */ = {
@@ -1387,6 +1443,9 @@
 					B6567FD4233C3D6400B42077 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					B6567FF5233CE34500B42077 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					B658ED182336EDAF00DD7210 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -1502,6 +1561,7 @@
 				B665430C233AD64800A205BA /* SEL类型 */,
 				B659DED0233AEE57001AFCB7 /* 引用计数器 */,
 				B6567FD4233C3D6400B42077 /* 野指针和空指针 */,
+				B6567FF5233CE34500B42077 /* 多对象内存管理 */,
 			);
 		};
 /* End PBXProject section */
@@ -1513,6 +1573,16 @@
 			files = (
 				B6567FDE233C3DD400B42077 /* Person.m in Sources */,
 				B6567FD8233C3D6400B42077 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6567FF2233CE34500B42077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6568002233CE37400B42077 /* Person.m in Sources */,
+				B6567FFF233CE36800B42077 /* Room.m in Sources */,
+				B6567FF9233CE34500B42077 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1757,6 +1827,26 @@
 			name = Debug;
 		};
 		B6567FDA233C3D6400B42077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6567FFA233CE34500B42077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6567FFB233CE34500B42077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -2339,6 +2429,15 @@
 			buildConfigurations = (
 				B6567FD9233C3D6400B42077 /* Debug */,
 				B6567FDA233C3D6400B42077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6567FFC233CE34500B42077 /* Build configuration list for PBXNativeTarget "多对象内存管理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6567FFA233CE34500B42077 /* Debug */,
+				B6567FFB233CE34500B42077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
