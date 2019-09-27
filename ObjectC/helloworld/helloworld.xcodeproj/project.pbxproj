@@ -26,6 +26,9 @@
 		B65F0F1623365F7500741AE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65F0F1523365F7500741AE8 /* main.m */; };
 		B65F0F212336667400741AE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65F0F202336667400741AE8 /* main.m */; };
 		B65F0F2C23366B6F00741AE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65F0F2B23366B6F00741AE8 /* main.m */; };
+		B6627B4A233EAFF400E6E177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6627B49233EAFF400E6E177 /* main.m */; };
+		B6627B50233EB01600E6E177 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6627B4F233EB01600E6E177 /* Person.m */; };
+		B6627B53233EB02700E6E177 /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = B6627B52233EB02700E6E177 /* Room.m */; };
 		B6644A0C233843A40038F61A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6644A0B233843A40038F61A /* main.m */; };
 		B6644A12233843EF0038F61A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B6644A11233843EF0038F61A /* Person.m */; };
 		B6644A1A233847CF0038F61A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6644A19233847CF0038F61A /* main.m */; };
@@ -140,6 +143,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		B65F0F2723366B6F00741AE8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B6627B45233EAFF300E6E177 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -352,6 +364,12 @@
 		B65F0F202336667400741AE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B65F0F2923366B6F00741AE8 /* 结构体作为方法参数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "结构体作为方法参数"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65F0F2B23366B6F00741AE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6627B47233EAFF300E6E177 /* set方法内存管理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "set方法内存管理"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6627B49233EAFF400E6E177 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6627B4E233EB01600E6E177 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B6627B4F233EB01600E6E177 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B6627B51233EB02700E6E177 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		B6627B52233EB02700E6E177 /* Room.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
 		B6644A09233843A30038F61A /* 私有变量和私有方法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "私有变量和私有方法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6644A0B233843A40038F61A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6644A10233843EF0038F61A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -489,6 +507,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B65F0F2623366B6F00741AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6627B44233EAFF300E6E177 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -716,6 +741,18 @@
 			path = "结构体作为方法参数";
 			sourceTree = "<group>";
 		};
+		B6627B48233EAFF400E6E177 /* set方法内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				B6627B49233EAFF400E6E177 /* main.m */,
+				B6627B4E233EB01600E6E177 /* Person.h */,
+				B6627B4F233EB01600E6E177 /* Person.m */,
+				B6627B51233EB02700E6E177 /* Room.h */,
+				B6627B52233EB02700E6E177 /* Room.m */,
+			);
+			path = "set方法内存管理";
+			sourceTree = "<group>";
+		};
 		B6644A0A233843A30038F61A /* 私有变量和私有方法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -766,6 +803,7 @@
 				B659DED2233AEE57001AFCB7 /* 引用计数器 */,
 				B6567FD6233C3D6400B42077 /* 野指针和空指针 */,
 				B6567FF7233CE34500B42077 /* 多对象内存管理 */,
+				B6627B48233EAFF400E6E177 /* set方法内存管理 */,
 				B664809D2331A9CC00CCD9A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -800,6 +838,7 @@
 				B659DED1233AEE57001AFCB7 /* 引用计数器 */,
 				B6567FD5233C3D6400B42077 /* 野指针和空指针 */,
 				B6567FF6233CE34500B42077 /* 多对象内存管理 */,
+				B6627B47233EAFF300E6E177 /* set方法内存管理 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1125,6 +1164,23 @@
 			productReference = B65F0F2923366B6F00741AE8 /* 结构体作为方法参数 */;
 			productType = "com.apple.product-type.tool";
 		};
+		B6627B46233EAFF300E6E177 /* set方法内存管理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6627B4B233EAFF400E6E177 /* Build configuration list for PBXNativeTarget "set方法内存管理" */;
+			buildPhases = (
+				B6627B43233EAFF300E6E177 /* Sources */,
+				B6627B44233EAFF300E6E177 /* Frameworks */,
+				B6627B45233EAFF300E6E177 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "set方法内存管理";
+			productName = "set方法内存管理";
+			productReference = B6627B47233EAFF300E6E177 /* set方法内存管理 */;
+			productType = "com.apple.product-type.tool";
+		};
 		B6644A08233843A30038F61A /* 私有变量和私有方法 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6644A0F233843A40038F61A /* Build configuration list for PBXNativeTarget "私有变量和私有方法" */;
@@ -1437,6 +1493,7 @@
 		B66480942331A9CC00CCD9A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = wovert;
 				TargetAttributes = {
@@ -1465,6 +1522,9 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					B65F0F2823366B6F00741AE8 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					B6627B46233EAFF300E6E177 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 					B6644A08233843A30038F61A = {
@@ -1562,6 +1622,7 @@
 				B659DED0233AEE57001AFCB7 /* 引用计数器 */,
 				B6567FD4233C3D6400B42077 /* 野指针和空指针 */,
 				B6567FF5233CE34500B42077 /* 多对象内存管理 */,
+				B6627B46233EAFF300E6E177 /* set方法内存管理 */,
 			);
 		};
 /* End PBXProject section */
@@ -1646,6 +1707,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B65F0F2C23366B6F00741AE8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6627B43233EAFF300E6E177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6627B53233EB02700E6E177 /* Room.m in Sources */,
+				B6627B50233EB01600E6E177 /* Person.m in Sources */,
+				B6627B4A233EAFF400E6E177 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1978,6 +2049,26 @@
 		B65F0F2F23366B6F00741AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6627B4C233EAFF400E6E177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4B9UB6S9G;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6627B4D233EAFF400E6E177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T4B9UB6S9G;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2501,6 +2592,15 @@
 			buildConfigurations = (
 				B65F0F2E23366B6F00741AE8 /* Debug */,
 				B65F0F2F23366B6F00741AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6627B4B233EAFF400E6E177 /* Build configuration list for PBXNativeTarget "set方法内存管理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6627B4C233EAFF400E6E177 /* Debug */,
+				B6627B4D233EAFF400E6E177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
