@@ -156,6 +156,11 @@
 - 按下 `Ctrl+r` 运行程序
 - ![缩小设备窗口](./images/device-scalar.png)
 
+### 项目的启动流程
+
+1. main.m
+2. AppDelegae.h
+3. 
 
 ### 工作空间
 
@@ -167,6 +172,12 @@
 - 飞: Option
 - ^: Command
 
+- 模拟器
+  - 回到首页：command + shift + h
+  - 打开所有进程：command + shift + (连续两下h)
+  - 模拟器大小：command + 1~4
+  - 截图(自动保存)：command + s
+  - 截图(选择保存)：command + alt + s
 - 代码提示：ESC
 - 移动行：alt + command + {[|]}
 - 配置编辑器: command + ,
